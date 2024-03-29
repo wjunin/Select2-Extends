@@ -27,11 +27,17 @@ Parametros de entrada:
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="Description" content="Select2-Extends">
             <meta name="Author" content="Wander Junior">
+
+            <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+            <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+            <script src="~/js/InfoCustomSelect2.js?v=@v" type="text/javascript"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js" integrity="sha512-WMEKGZ7L5LWgaPeJtw9MBM4i5w5OSBlSjTjCtSnvFJGSVD26gE5+Td12qN5pvWXhuWaWcVwF++F7aqu9cvqP0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>            
         </head>
         <body>
             <div class="col-md-4">
                 <label class="form-label">N. Juridica</label>
-                <select id="natJuridica" name="natJuridica" class="form-select input-laranja" data-element="natJuridica" data-element-text="natJuridicaTXT"></select>
+                <select id="SuaSelect" name="SuaSelect" class="form-select input-laranja" data-element="natJuridica" data-element-text="natJuridicaTXT"></select>
             </div>            
         </body>
     </html>
