@@ -12,7 +12,7 @@ Extendendo as funcionalidades da Select2
 # Facilitador de desenvolvimento utilizando componente Select2
 Parametros de entrada:
   *  urlGet: Caminho para obter dados do back-end no padrão json
-  *  dataSend: Dados fixos no formato json
+  *  dataSend: Dados fixos no formato json utilizado para envio no POST para o back-end
   *  pagging: True or False, para indicar se haverá paginação **Padrão: True**
   *  dropdown: Quando utilizado em janelas modal, deve ser indicado o ID da modal para abertura da caixa de seleção
   *  required: Indica se o campo é obrigatório ou não **Padrão: True**
