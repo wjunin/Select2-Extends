@@ -16,3 +16,37 @@ Parametros de entrada:
   *  pagging: True or False, para indicar se haverá paginação **Padrão: True**
   *  dropdown: Quando utilizado em janelas modal, deve ser indicado o ID da modal para abertura da caixa de seleção
   *  required: Indica se o campo é obrigatório ou não **Padrão: True**
+    
+# Forma de utilizar
+    <html lang="pt-br">
+        <head>
+            <meta charset="utf-8" />
+            <meta http-equiv="content-language" content="pt-br">
+            <meta http-equiv="content-type" content="text/html; charset=utf-8">
+            <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no'>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="Description" content="Select2-Extends">
+            <meta name="Author" content="Wander Junior">
+        </head>
+        <body>
+            <div class="col-md-4">
+                <label class="form-label">N. Juridica</label>
+                <select id="natJuridica" name="natJuridica" class="form-select input-laranja" data-element="natJuridica" data-element-text="natJuridicaTXT"></select>
+            </div>            
+        </body>
+    </html>
+    <script type="text/javascript">
+        //Chamada para a extensão do arquivo de extensão
+        var _suaSelect = $('#SuaSelect').select2Ex('<caminho para chamada no back-end>', null, true);
+
+        //Seleção da opção desejada
+        function CarregarOpcaoDesejada(id, text){
+            $('#SuaSelect').fillSelect2(id, text);
+        }
+
+        //Para Validar se alguma opção foi selecionada
+        function ValidarSelecao(){
+            $('#SuaSelect').checkDataSelect2('Sua mensagem caso nenhuma opção tenha sido escolhida');
+        }
+        
+    </script>
